@@ -10,6 +10,12 @@
 
       echo date('h');   //Hour
       echo date('i');   //Minuts
-      echo date('s');   //Day
-      echo date('a');   //Day
+      echo date('s');   //Seconds
+      echo date('a');   //AM or PM
+
+      //Set Time Zone
+      date_default_timezone_set('America/New_York');
+
+      echo date('h:i:sa');
+
 ?>
